@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .about-me {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills, .projects, .contact {
+            margin: 30px 0;
+        }
+
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .projects li {
+            background-color: #e7e7e7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .projects img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section id="about-me" class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I am a software engineering student passionate about front-end development. Although I am still gaining experience, I am constantly learning and improving my skills in HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript (Basic)</li>
+                <li>Bootstrap Framework</li>
+                <li>Version Control with Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>To-Do List App</strong>
+                    <p>A simple to-do list app using HTML, CSS, and JavaScript.</p>
+                    <img src="https://via.placeholder.com/300" alt="To-Do List App">
+                </li>
+                <li>
+                    <strong>Memory Game</strong>
+                    <p>A fun and interactive memory game built with JavaScript.</p>
+                    <img src="https://via.placeholder.com/300" alt="Memory Game">
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
